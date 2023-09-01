@@ -1,0 +1,112 @@
+/* Reset default browser styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Timer and stopwatch container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Timer and stopwatch boxes */
+.timer, .stopwatch {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    transition: transform 0.2s;
+}
+
+.timer:hover, .stopwatch:hover {
+    transform: translateY(-5px);
+}
+
+/* Titles */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Time display */
+.time {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+/* Input field for the timer */
+.time input[type="text"] {
+    width: 80px;
+    padding: 8px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: #333;
+}
+
+/* Style the timer's "Start" button */
+.time button#start-timer {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.time button#start-timer:hover {
+    background-color: #0056b3;
+}
+
+/* Style the stopwatch buttons */
+.stopwatch .time button {
+    background-color: #2ecc40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.stopwatch .time button:hover {
+    background-color: #209530;
+}
+
+/* Disabled state for buttons */
+.controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Reset button */
+.controls #reset-timer, .controls #reset-stopwatch {
+    background-color: #ff4136;
+}
+
+.controls #reset-timer:hover, .controls #reset-stopwatch:hover {
+    background-color: #d00f00;
+}
